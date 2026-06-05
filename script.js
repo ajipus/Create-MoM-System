@@ -36,8 +36,9 @@ function addRow(){
             <div class="table-cell-center">
 
                 <input
+
                     type="text"
-                    class="table-input"
+                    class="table-input scope-input"
                     placeholder="Scope">
 
             </div>
