@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meeting Minutes Of Meeting (MoM)</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="toolbar no-print">
+
+    <button class="btn-add" onclick="addRow()">
+        + Add Row
+    </button>
+
+    <button class="btn-export" onclick="exportPDF()">
+        Export PDF
+    </button>
+
+</div>
+
+<div id="mom-sheet">
+
+    <table class="header-table">
+
+        <colgroup>
+            <col class="col-logo">
+            <col class="col-info">
+            <col class="col-participant">
+        </colgroup>
+
+        <tr>
+
+            <td class="logo-cell">
+
+                <img
+                    src="assets/logo-garuda-metalindo.png"
+                    alt="Garuda Metalindo"
+                    class="logo-img">
+
+            </td>
+
+            <td colspan="2" class="agenda-cell">
+
+                <input
+                    type="text"
+                    class="agenda-input"
+                    placeholder="MOM (PROJECT NAME)">
+
+            </td>
+
+        </tr>
+
+        <tr>
+
+            <td rowspan="3" class="category-cell">
+
+                <div>
+
+                    <h3>Category</h3>
+
+                    <p>
+                        Info (I) / Action (A) / Decision (D)
+                    </p>
+
+                </div>
+
+            </td>
+
+            <td class="form-cell">
+
+                <label>Date :</label>
+
+                <input type="date">
+
+            </td>
+
+            <td rowspan="3" class="participant-cell">
+
+                <div class="participant-wrapper">
+
+                    <div class="participant-label">
+                        Participant :
+                    </div>
+
+                    <textarea
+                        placeholder="Input participant meeting">
+                    </textarea>
+
+                </div>
+
+            </td>
+
+        </tr>
+
+        <tr>
+
+            <td class="form-cell">
+
+                <label>Location :</label>
+
+                <input
+                    type="text"
+                    placeholder="Input location">
+
+            </td>
+
+        </tr>
+
+        <tr>
+
+            <td class="form-cell">
+
+                <label>Time :</label>
+
+                <div class="time-range">
+
+                    <input type="time">
+
+                    <span>-</span>
+
+                    <input type="time">
+
+                </div>
+
+            </td>
+
+        </tr>
+
+    </table>
+
+    <table id="momTable">
+
+        <thead>
+
+        <tr>
+
+            <th class="col-no">
+                No.
+            </th>
+
+            <th class="col-cat">
+                Cat.
+            </th>
+
+            <th class="col-scope">
+                Scope
+            </th>
+
+            <th class="col-obs">
+                Observations / Decision
+            </th>
+
+            <th class="col-date">
+                Due Date
+            </th>
+
+            <th class="col-pic">
+                Responsibility
+            </th>
+
+            <th class="col-action no-print">
+                Action
+            </th>
+
+        </tr>
+
+        </thead>
+
+        <tbody id="tableBody">
+
+        </tbody>
+
+    </table>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
