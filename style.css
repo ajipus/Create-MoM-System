@@ -170,6 +170,10 @@ table{
     width:130px;
 }
 
+.scope-input{
+    text-align:center;
+}
+
 .col-date{
     width:140px;
 }
@@ -240,6 +244,9 @@ table{
     width:100%;
     border:none;
     outline:none;
+
+    font-family: Arial, sans-serif;
+    font-size: 12pt;
 }
 
 .table-textarea{
