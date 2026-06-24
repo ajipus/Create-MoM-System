@@ -180,12 +180,16 @@ table{
 
 .col-pic{
     width:180px;
+}
+
+.pic-input{
     text-align:center;
 }
 
 .col-action{
     width:100px;
 }
+
 
 .col-obs{
     width:auto;
